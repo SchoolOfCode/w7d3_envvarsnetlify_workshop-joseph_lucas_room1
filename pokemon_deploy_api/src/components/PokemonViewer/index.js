@@ -14,6 +14,7 @@ function PokemonViewer({ id, pokemon, setPokemon }) {
       );
       let data = await response.json();
       setPokemon(data);
+      console.log(process.env.REACT_APP_API_URL);
       console.log(pokemon);
     }
     getPokemon();
